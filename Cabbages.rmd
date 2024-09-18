@@ -37,17 +37,34 @@ VitC~Cult; Numerical~Catagorial
 
 ### Graphical Descriptive Results
 
+```{r}
+plot(VitC~Cult,data=veggy)
+```
+
+This graph shows that on average, the c39 method has lower VitC levels than the c52 method.
+
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ### Numerical Descriptive Results
 
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
+
+Based on this chart, we can see that there is a difference between the methods c39 and c52 by looking at their means. While c39 is averaging a mean of 51.5, c52 has a higher average mean of 64.4, proving the c52 method to have more VitC.
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ## Inferential Results
 
+```{r}
+t.test(VitC~Cult,data=veggy)
+```
+
+Because this p-value = 3.405e-08, it is significally lower then 0.05 meaning we must reject the null hypothesis. This can conclude that the c52 method has higher levels of VitC then c39, showing their difference.
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
 
 # Discussion and Conclusion
 
+Wanted to test if there was a difference in VitC between c52 and c39 cultivation methods. Provided evidence and stastical data to prove that there was a difference between the two, ulitimatley rejecting the null hypothesis and showing that the c52 method has a higher level of VitC than the c39 method.
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
